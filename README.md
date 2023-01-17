@@ -7,11 +7,11 @@ This program is a movie ranking system that uses the Elo rating system to rank m
 - The program starts with a list of movies and their attributes (e.g. title, year, director, genre, etc.) which have been scraped from a movie database website. 
 Each movie is saved to a database and initializes the Elo rating for each movie to 1500.
 
-- The program then prompts the user to compare two movies and input their opinion on which movie is better using a user interface created using PyQt5
+- The program then prompts the user to compare two movies and input their opinion on which movie is better using a user interface created using PyQt5.
 
-- Based on the user's input, the program updates the Elo ratings of the two movies using the Elo rating system formula.
+- Based on the user's input, the program updates the Elo ratings of the two movies using the Elo rating system formula and saves these changes to the database.
 
-- The user can continue to complete movie matchups or view their least or most favourite movies
+- The user can continue to complete movie matchups or view their least or most favourite movies.
 
 ## Screenshots
 
