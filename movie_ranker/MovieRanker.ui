@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Movie Ranker</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+	background-color: rgb(85, 170, 255);
+	border-radius: 5px;
+	border-width: 4px;
+	border-style: solid;
+	border-color: rgb(0, 0, 255);
+}
+
+QPushButton:Hover {
+	background-color: rgb(0, 255, 255);
+}
+
+QPushButton:Pressed {
+	background-color: rgb(170, 255, 255);
+}
+
+QMainWindow {
+	background-color: rgb(0, 0, 210);
+	color: rgb(0, 0, 255);
+	font: 28pt &quot;MS UI Gothic&quot;;
+	border-radius: 5px;
+}
+
+#lblMovieRanker {
+	border-radius: 5px;
+	background-color: rgb(0, 170, 255);
+	border-width: 2px;
+	border-style: solid;
+	border-color: rgb(0, 85, 255);
+	min-width: 10em;
+	padding: 6px;
+}
+
+QTabWidget::pane {
+	border: 2px solid rgb(0, 85, 255);
+	border-radius: 3px;
+  	top:-1px; 
+  	background-color: rgb(0, 170, 255);
+} 
+
+QTabBar::tab {
+	width: 216.4%;
+	font: &quot;MS UI Gothic&quot; bold;
+  	background: rgb(0, 170, 255); 
+  	border: 2px solid rgb(0, 85, 255);
+	border-radius: 3px;
+	padding: 20px;
+} 
+
+QTabBar::tab:selected { 
+  background: rgb(85, 170, 255); 
+  margin-bottom: -1px; 
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="lblMovieRanker">
+      <property name="font">
+       <font>
+        <family>MS UI Gothic</family>
+        <pointsize>36</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Movie Ranker</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <family>MS UI Gothic</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>32</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="compTab">
+       <attribute name="title">
+        <string>Movie Matchup</string>
+       </attribute>
+       <widget class="QLabel" name="lblQuestion">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>771</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS UI Gothic</family>
+          <pointsize>28</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Which movie do you prefer?</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="movieOneButton">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>100</y>
+          <width>341</width>
+          <height>381</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS UI Gothic</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Movie One</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="movieTwoButton">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>100</y>
+          <width>341</width>
+          <height>381</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS UI Gothic</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Movie Two</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblOutcome">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>500</y>
+          <width>751</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS PGothic</family>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="bestTab">
+       <attribute name="title">
+        <string>Favourite Movies</string>
+       </attribute>
+       <widget class="QLabel" name="lblFavouriteTitle">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>751</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS UI Gothic</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Your Favourite Movies:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblFavouriteMovies">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>741</width>
+          <height>501</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS UI Gothic</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="worstTab">
+       <attribute name="title">
+        <string>Worst Movies</string>
+       </attribute>
+       <widget class="QLabel" name="lblWorstTitle">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>751</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS UI Gothic</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Your Least Favourite Movies:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblWorstMovies">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>741</width>
+          <height>501</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS UI Gothic</family>
+          <pointsize>20</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
