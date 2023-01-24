@@ -14,7 +14,8 @@ Each movie is saved to a database and initializes the Elo rating for each movie 
 - The user can continue to complete movie matchups or view their least or most favourite movies.
 
 ## Screenshots
-
+![Matchup]()
+![Favourite Movies]()
 ## Improvements
 
 It is important to note that the ranking is based on user opinions, so the ranking may be biased towards certain movies or genres. This can be improved by gathering more user opinions or by taking into account additional attributes for each movie. The more matchups that are completed by a specific user for an instance of the database, the more biased the ratings will be towards a specific user. A way to combat this would be to have a login system with different elo rankings for different users to have more personalised movie rankings. Additional improvements could be integrating a system where a user could share their movie rankings via email or social media.
